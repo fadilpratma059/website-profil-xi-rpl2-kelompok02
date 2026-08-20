@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XI RPL 2 | Profil Kelas</title>
+    <meta
+      name="description"
+      content="Profil kelas XI RPL 2, anggota tim, dan kontak resmi kelas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --bg-1: #0f172a;
+        --bg-2: #111827;
+        --bg-3: #1d4ed8;
+        --card: rgba(15, 23, 42, 0.64);
+        --card-strong: rgba(15, 23, 42, 0.85);
+        --glass: rgba(255, 255, 255, 0.08);
+        --text: #e5eefb;
+        --muted: #b7c7df;
+        --primary: #60a5fa;
+        --secondary: #34d399;
+        --accent: #f59e0b;
+        --border: rgba(255, 255, 255, 0.15);
+        --shadow: 0 30px 60px rgba(15, 23, 42, 0.45);
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(96, 165, 250, 0.25), transparent 35%),
+          radial-gradient(circle at bottom right, rgba(52, 211, 153, 0.18), transparent 30%),
+          linear-gradient(135deg, var(--bg-1), var(--bg-2) 38%, #0b1120);
+        color: var(--text);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        filter: blur(70px);
+        opacity: 0.4;
+        z-index: 0;
+        animation: floatOrb 12s ease-in-out infinite alternate;
+      }
+
+      body::before {
+        background: rgba(96, 165, 250, 0.23);
+        top: -180px;
+        left: -120px;
+      }
+
+      body::after {
+        background: rgba(52, 211, 153, 0.2);
+        right: -120px;
+        bottom: -150px;
+        animation-duration: 16s;
+      }
+
+      @keyframes floatOrb {
+        0% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        100% {
+          transform: translate3d(30px, -30px, 0) scale(1.12);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .container {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(16px);
+        background: rgba(15, 23, 42, 0.35);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 78px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        box-shadow: 0 12px 30px rgba(96, 165, 250, 0.35);
+        font-size: 1.1rem;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+
+      .nav-links a {
+        transition: color 0.25s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+      }
+
+      .nav-button {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.03);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .nav-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(96, 165, 250, 0.18);
+      }
+
+      section {
+        padding: 90px 0;
+      }
+
+      .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(96, 165, 250, 0.12);
+        color: var(--primary);
+        border: 1px solid rgba(96, 165, 250, 0.2);
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(2.8rem, 5vw, 5rem);
+        line-height: 1.02;
+        margin: 0;
+        letter-spacing: -0.05em;
+      }
+
+      .highlight {
+        background: linear-gradient(135deg, #7dd3fc, #a7f3d0 55%, #fef08a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero-text p {
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.9;
+        margin: 20px 0 28px;
+        max-width: 640px;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 600;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--primary), #2563eb);
+        color: white;
+        box-shadow: 0 18px 30px rgba(37, 99, 235, 0.35);
+      }
+
+      .btn-secondary {
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.04);
+        border-color: var(--border);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: 18px;
+        margin-top: 32px;
+      }
+
+      .stat {
+        padding: 18px 16px;
+        border-radius: 20px;
+        background: rgba(148, 163, 184, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin-bottom: 4px;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      .hero-card {
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.8));
+        border: 1px solid var(--border);
+        padding: 26px;
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(96, 165, 250, 0.16), transparent 45%, rgba(52, 211, 153, 0.12));
+      }
+
+      .code-window {
+        position: relative;
+        background: rgba(15, 23, 42, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .window-bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .dot.red { background: #f87171; }
+      .dot.yellow { background: #fbbf24; }
+      .dot.green { background: #34d399; }
+
+      .code-body {
+        padding: 26px 22px 22px;
+        font-size: 0.94rem;
+        line-height: 1.8;
+        color: #dbeafe;
+      }
+
+      .code-body .line {
+        display: block;
+      }
+
+      .code-body .tag { color: #7dd3fc; }
+      .code-body .val { color: #a7f3d0; }
+      .code-body .attr { color: #f9a8d4; }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 42px;
+      }
+
+      .section-title span {
+        display: inline-block;
+        color: var(--primary);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+      }
+
+      .section-title h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.1rem);
+      }
+
+      .glass-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+
+      .profile-layout {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 24px;
+      }
+
+      .profile-panel {
+        padding: 28px;
+      }
+
+      .profile-content {
+        display: grid;
+        gap: 16px;
+      }
+
+      .info-row {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 18px;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .info-row:last-child {
+        border-bottom: none;
+      }
+
+      .label {
+        color: var(--muted);
+      }
+
+      .value {
+        font-weight: 600;
+      }
+
+      .mini-card {
+        padding: 28px;
+        display: grid;
+        gap: 16px;
+      }
+
+      .mini-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        padding: 8px 12px;
+        background: rgba(52, 211, 153, 0.12);
+        color: #bbf7d0;
+        border-radius: 999px;
+        border: 1px solid rgba(52, 211, 153, 0.22);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .mini-card p {
+        margin: 0;
+        line-height: 1.9;
+        color: var(--muted);
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .member-card {
+        position: relative;
+        overflow: hidden;
+        padding: 24px 20px 20px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+      }
+
+      .member-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(96, 165, 250, 0.35);
+      }
+
+      .member-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(135deg, rgba(96, 165, 250, 0.22), rgba(52, 211, 153, 0.18));
+      }
+
+      .member-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .avatar {
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        box-shadow: 0 18px 28px rgba(96, 165, 250, 0.25);
+        color: white;
+      }
+
+      .member-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+      }
+
+      .badge {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 8px 12px;
+        margin-bottom: 12px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .badge.blue { background: rgba(96, 165, 250, 0.14); color: #bfdbfe; }
+      .badge.green { background: rgba(52, 211, 153, 0.12); color: #bbf7d0; }
+      .badge.yellow { background: rgba(251, 191, 36, 0.12); color: #fde68a; }
+      .badge.pink { background: rgba(244, 114, 182, 0.12); color: #fbcfe8; }
+
+      .member-card p {
+        margin: 0;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      .contact-highlight {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin-bottom: 24px;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .contact-card {
+        padding: 24px 22px;
+        border-bottom: 2px solid rgba(96, 165, 250, 0.35);
+      }
+
+      .contact-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(52, 211, 153, 0.15));
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      .contact-card h3 {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+      }
+
+      .contact-card p,
+      .contact-card a {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .footer {
+        padding: 28px 0 42px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid,
+        .profile-layout,
+        .team-grid,
+        .contact-grid,
+        .contact-highlight {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links {
+          display: none;
+        }
+      }
+
+      @media (max-width: 700px) {
+        section {
+          padding: 72px 0;
+        }
+
+        .team-grid,
+        .contact-grid,
+        .profile-layout,
+        .contact-highlight {
+          grid-template-columns: 1fr;
+        }
+
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        .info-row {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Beranda XI RPL 2">
+          <span class="brand-mark">R</span>
+          <span>XI RPL 2</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a href="#profil">Profil</a>
+          <a href="#anggota">Anggota</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+
+        <a href="#kontak" class="nav-button">Hubungi Kami</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <div class="eyebrow">Kelas Digital & Inovatif</div>
+            <h1>
+              Selamat datang di <span class="highlight">XI RPL 2</span>
+            </h1>
+            <p>
+              Kami adalah kelas Rekayasa Perangkat Lunak yang berkomitmen
+              menumbuhkan semangat belajar, kerja sama, dan inovasi teknologi.
+              Di sini, kami membangun keterampilan praktis, kreativitas, serta
+              rasa tanggung jawab dalam menghadapi perkembangan digital.
+            </p>
+
+            <div class="cta-row">
+              <a href="#profil" class="btn btn-primary">Lihat Profil</a>
+              <a href="#anggota" class="btn btn-secondary">Lihat Anggota</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>4</strong>
+                <span>anggota tim</span>
+              </div>
+              <div class="stat">
+                <strong>1</strong>
+                <span>kelas unggul</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>semangat belajar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="code-window">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="code-body">
+                <span class="line"><span class="tag">&lt;kelas&gt;</span></span>
+                <span class="line"> &nbsp;&nbsp;<span class="tag">&lt;nama&gt;</span><span class="val">XI RPL 2</span><span class="tag">&lt;/nama&gt;</span></span>
+                <span class="line"> &nbsp;&nbsp;<span class="tag">&lt;sekolah&gt;</span><span class="val">SMKN 1 Garut</span><span class="tag">&lt;/sekolah&gt;</span></span>
+                <span class="line"> &nbsp;&nbsp;<span class="tag">&lt;program&gt;</span><span class="val">RPL</span><span class="tag">&lt;/program&gt;</span></span>
+                <span class="line"> &nbsp;&nbsp;<span class="tag">&lt;visi&gt;</span><span class="val">Berkarya dan berkembang</span><span class="tag">&lt;/visi&gt;</span></span>
+                <span class="line"><span class="tag">&lt;/kelas&gt;</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="profil">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>Profil Kelas</span>
+            <h2>Identitas dan visi kami</h2>
+          </div>
+
+          <div class="profile-layout reveal">
+            <div class="glass-card profile-panel">
+              <div class="profile-content">
+                <div class="info-row">
+                  <div class="label">Nama Kelas</div>
+                  <div class="value">XI RPL 2</div>
+                </div>
+                <div class="info-row">
+                  <div class="label">Sekolah</div>
+                  <div class="value">SMKN 1 Garut</div>
+                </div>
+                <div class="info-row">
+                  <div class="label">Program</div>
+                  <div class="value">Rekayasa Perangkat Lunak</div>
+                </div>
+                <div class="info-row">
+                  <div class="label">Deskripsi</div>
+                  <div class="value">
+                    Kelas yang berfokus pada pengembangan keterampilan praktis,
+                    kedisiplinan, dan kolaborasi.
+                  </div>
+                </div>
+                <div class="info-row">
+                  <div class="label">Visi</div>
+                  <div class="value">
+                    Menjadi komunitas pelajar yang unggul, berintegritas tinggi,
+                    dan mampu menghasilkan karya teknologi yang bermanfaat.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card mini-card reveal">
+              <span class="mini-badge">Komitmen</span>
+              <p>
+                Kami beradaptasi dengan perkembangan teknologi dan terus berinovasi
+                untuk menghasilkan solusi yang relevan, terstruktur, dan bermanfaat
+                bagi lingkungan sekitar.
+              </p>
+              <p>
+                Semangat belajar, disiplin, dan kerja sama menjadi fondasi utama
+                dalam membangun karakter serta kemampuan kami di bidang teknologi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="anggota">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>Tim Kami</span>
+            <h2>Anggota kelas XI RPL 2</h2>
+          </div>
+
+          <div class="team-grid">
+            <article class="glass-card member-card reveal">
+              <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <h3>Fadil Pratama</h3>
+              <span class="badge blue">Project Manager</span>
+              <p>Bertanggung jawab memimpin jalannya proyek dan koordinasi tim.</p>
+            </article>
+
+            <article class="glass-card member-card reveal">
+              <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <h3>Pirda Mustika</h3>
+              <span class="badge green">Developer Profil</span>
+              <p>Mengembangkan profil dan informasi anggota tim secara rapi.</p>
+            </article>
+
+            <article class="glass-card member-card reveal">
+              <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <h3>Nadira Silvia</h3>
+              <span class="badge yellow">Developer Anggota</span>
+              <p>Mengelola fitur dan tampilan halaman anggota agar lebih menarik.</p>
+            </article>
+
+            <article class="glass-card member-card reveal">
+              <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <h3>Rizal Fauzi</h3>
+              <span class="badge pink">Developer Kontak</span>
+              <p>Mengembangkan fitur kontak dan komunikasi tim dengan tampilan yang jelas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>Kontak</span>
+            <h2>Hubungi kami</h2>
+          </div>
+
+          <div class="contact-highlight reveal">
+            <div class="glass-card contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h3>Lokasi</h3>
+              <p>SMKN 1 Garut</p>
+              <p>Jl. Cimanuk No.309A,Sukagalih,Kec.Tarogong kidul,kabupaten Garut,Jawa barat</p>
+              <p>Indonesia</p>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="glass-card contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Fadil</h3>
+              <p>Email: fadilpratama@example.com</p>
+              <p>Instagram: @dillzzzzz01</p>
+              <p>WhatsApp: 089531351199</p>
+            </div>
+
+            <div class="glass-card contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Nadira</h3>
+              <p>Email: nadira@example.com</p>
+              <p>Instagram: @nadira.silviaa</p>
+              <p>WhatsApp: 08814551626</p>
+            </div>
+
+            <div class="glass-card contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Pirda</h3>
+              <p>Email: pirdaa@example.com</p>
+              <p>Instagram: @chizimioka</p>
+              <p>WhatsApp: 08966169444</p>
+            </div>
+
+            <div class="glass-card contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Rizal</h3>
+              <p>Email: mrizalll@example.com</p>
+              <p>Instagram: @rzalfauji</p>
+              <p>WhatsApp: 089694490100</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 XI RPL 2 — SMKN 1 Garut</div>
+    </footer>
+
+    <script>
+      const revealItems = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      revealItems.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
