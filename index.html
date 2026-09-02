@@ -504,6 +504,40 @@
         color: var(--muted);
       }
 
+      .project-summary {
+        max-width: 760px;
+        margin: 0 auto 28px;
+        color: var(--muted);
+        text-align: center;
+        line-height: 1.8;
+      }
+
+      .documentation-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .documentation-item {
+        overflow: hidden;
+        padding-bottom: 14px;
+      }
+
+      .documentation-item img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .documentation-item figcaption {
+        padding: 14px 18px 0;
+        color: var(--muted);
+        font-size: 0.86rem;
+        text-align: center;
+      }
+
       .contact-highlight {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -545,6 +579,136 @@
         line-height: 1.8;
       }
 
+      .contact-method {
+        display: grid;
+        gap: 6px;
+        margin-bottom: 12px !important;
+        color: var(--muted);
+        font-size: 0.86rem;
+        line-height: 1.4 !important;
+      }
+
+      .contact-card .contact-method a[href*="instagram.com"],
+      .contact-card .contact-method a[href*="wa.me"] {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 100%;
+        min-height: 38px;
+        padding: 8px 12px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 0.88rem;
+        font-weight: 600;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .contact-card .contact-method a[href*="instagram.com"] {
+        background: rgba(217, 70, 117, 0.18);
+        border-color: rgba(244, 114, 182, 0.35);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+
+      .contact-card .contact-method a[href*="instagram.com"]::before {
+        content: "\f16d";
+        font-family: "Font Awesome 6 Brands";
+        color: #f9a8d4;
+      }
+
+      .contact-card .contact-method a[href*="wa.me"] {
+        background: rgba(22, 163, 106, 0.18);
+        border-color: rgba(52, 211, 153, 0.35);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+
+      .contact-card .contact-method a[href*="wa.me"]::before {
+        content: "\f232";
+        font-family: "Font Awesome 6 Brands";
+        color: #6ee7b7;
+      }
+
+      .contact-card .contact-method a[href*="instagram.com"]:hover,
+      .contact-card .contact-method a[href*="wa.me"]:hover {
+        background: rgba(255, 255, 255, 0.16);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+      }
+
+      .contact-card .contact-method a[href*="instagram.com"]:focus-visible,
+      .contact-card .contact-method a[href*="wa.me"]:focus-visible {
+        outline: 3px solid rgba(255, 255, 255, 0.8);
+        outline-offset: 3px;
+      }
+
+      .class-instagram {
+        display: grid;
+        justify-content: center;
+        gap: 8px;
+        margin: 30px auto 0;
+        text-align: center;
+      }
+
+      .class-account {
+        margin: 34px auto 0;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        text-align: center;
+      }
+
+      .class-account h3 {
+        margin: 0 0 8px;
+        font-size: 1.2rem;
+      }
+
+      .class-account p {
+        margin: 4px 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .class-instagram-label {
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .class-instagram a {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 11px 18px;
+        border: 1px solid rgba(244, 114, 182, 0.35);
+        border-radius: 10px;
+        background: rgba(217, 70, 117, 0.18);
+        color: #fbcfe8;
+        font-size: 0.9rem;
+        font-weight: 600;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .class-instagram a::before {
+        content: "\f16d";
+        font-family: "Font Awesome 6 Brands";
+      }
+
+      .class-instagram a:hover {
+        transform: translateY(-2px);
+        background: rgba(244, 114, 182, 0.28);
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+      }
+
+      .class-instagram a:focus-visible {
+        outline: 3px solid rgba(255, 255, 255, 0.8);
+        outline-offset: 3px;
+      }
+
       .footer {
         padding: 28px 0 42px;
         color: var(--muted);
@@ -567,7 +731,8 @@
         .profile-layout,
         .team-grid,
         .contact-grid,
-        .contact-highlight {
+        .contact-highlight,
+        .documentation-grid {
           grid-template-columns: 1fr 1fr;
         }
 
@@ -588,7 +753,8 @@
         .team-grid,
         .contact-grid,
         .profile-layout,
-        .contact-highlight {
+        .contact-highlight,
+        .documentation-grid {
           grid-template-columns: 1fr;
         }
 
@@ -771,6 +937,35 @@
         </div>
       </section>
 
+      <section id="proyek">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>Proyek Kelas</span>
+            <h2>Informasi dan dokumentasi proyek</h2>
+          </div>
+
+          <p class="project-summary reveal">
+            Website Profil Kelas XI RPL 2 dibuat untuk memperkenalkan identitas,
+            anggota, dan kegiatan kelas secara digital menggunakan HTML dan CSS.
+          </p>
+
+          <div class="documentation-grid">
+            <figure class="glass-card documentation-item reveal">
+              <img src="image/Screenshot%202026-09-02%20194429.png" alt="Dokumentasi repository proyek" />
+              <figcaption>Repository proyek</figcaption>
+            </figure>
+            <figure class="glass-card documentation-item reveal">
+              <img src="image/Screenshot%202026-09-02%20194947.png" alt="Dokumentasi riwayat perubahan proyek" />
+              <figcaption>Riwayat perubahan proyek</figcaption>
+            </figure>
+            <figure class="glass-card documentation-item reveal">
+              <img src="image/Screenshot%202026-09-02%20200922.png" alt="Dokumentasi pull request proyek" />
+              <figcaption>Pull request proyek</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section id="kontak">
         <div class="container">
           <div class="section-title reveal">
@@ -778,49 +973,51 @@
             <h2>Hubungi kami</h2>
           </div>
 
-          <div class="contact-highlight reveal">
-            <div class="glass-card contact-card">
-              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <h3>Lokasi</h3>
-              <p>SMKN 1 Garut</p>
-              <p>Jl. Cimanuk No.309A,Sukagalih,Kec.Tarogong kidul,kabupaten Garut,Jawa barat</p>
-              <p>Indonesia</p>
-            </div>
-          </div>
-
           <div class="contact-grid">
             <div class="glass-card contact-card reveal">
               <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
               <h3>Fadil</h3>
               <p>Email: fadilpratama@example.com</p>
-              <p>Instagram: @dillzzzzz01</p>
-              <p>WhatsApp: 089531351199</p>
+              <p class="contact-method">Instagram: <a href="https://www.instagram.com/dillzzzzz01?igsi=MW1qYThmY3doZW1oMQ==" target="_blank" rel="noopener noreferrer">@dillzzzzz01</a></p>
+              <p class="contact-method">WhatsApp: <a href="https://wa.me/6289531351199" target="_blank" rel="noopener noreferrer">089531351199</a></p>
             </div>
 
             <div class="glass-card contact-card reveal">
               <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
               <h3>Nadira</h3>
               <p>Email: nadira@example.com</p>
-              <p>Instagram: @nadira.silviaa</p>
-              <p>WhatsApp: 08814551626</p>
+              <p class="contact-method">Instagram: <a href="https://www.instagram.com/nadira.silviaa?igsh=MWl3N2FrYWI5MmZtNw==" target="_blank" rel="noopener noreferrer">@nadira.silviaa</a></p>
+              <p class="contact-method">WhatsApp: <a href="https://wa.me/628814551626" target="_blank" rel="noopener noreferrer">08814551626</a></p>
             </div>
 
             <div class="glass-card contact-card reveal">
               <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
               <h3>Pirda</h3>
               <p>Email: pirdaa@example.com</p>
-              <p>Instagram: @chizimioka</p>
-              <p>WhatsApp: 08966169444</p>
+              <p class="contact-method">Instagram: <a href="https://www.instagram.com/chizimioka?igsh=MWcxdnBxaTE5ODN5aA==" target="_blank" rel="noopener noreferrer">@chizimioka</a></p>
+              <p class="contact-method">WhatsApp: <a href="https://wa.me/628966169444" target="_blank" rel="noopener noreferrer">08966169444</a></p>
             </div>
 
             <div class="glass-card contact-card reveal">
               <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
               <h3>Rizal</h3>
               <p>Email: mrizalll@example.com</p>
-              <p>Instagram: @rzalfauji</p>
-              <p>WhatsApp: 089694490100</p>
+              <p class="contact-method">Instagram: <a href="https://www.instagram.com/rzalfauji_?igsh=MW5pdWt0YzV3ZHh5NA==&igsi=MW5pdWt0YzV3ZHh5NA==" target="_blank" rel="noopener noreferrer">@rzalfauji_</a></p>
+              <p class="contact-method">WhatsApp: <a href="https://wa.me/6289694490100" target="_blank" rel="noopener noreferrer">089694490100</a></p>
             </div>
           </div>
+
+          <div class="class-account reveal">
+            <h3>Akun Kelas</h3>
+            <p>Email: xirpl2@example.com</p>
+            <p>WhatsApp: 08xxxxxxxxxx</p>
+            <p>Alamat Sekolah: SMKN 1 Garut</p>
+            <div class="class-instagram">
+              <span class="class-instagram-label">Ikuti akun resmi kelas</span>
+              <a href="https://www.instagram.com/laraveleloquent_11rpl2?igsi=eGRmdDl3eDVwaHpz" target="_blank" rel="noopener noreferrer">Instagram Kelas · @laraveleloquent_11rpl2</a>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
