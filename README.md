@@ -1,5 +1,4 @@
-# website-profil-xi-rpl2-kelompok02
-Website dikembangkan menggunakan HTML.
+
 # website-profil-xi-rpl2-02
 
 website ini merupakan proyek pembelajaran
