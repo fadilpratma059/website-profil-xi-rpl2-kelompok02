@@ -117,7 +117,7 @@ Kontribusi terbesar saya adalah membantu membantu bagian yang tidak mengerti ole
 -Kebiasaan yang akan saya pertahankan adalah menggunakan Git dan GitHub dengan baik, seperti membuat branch, melakukan commit dengan jelas, dan mengecek kembali kode sebelum digabungkan. Saya juga ingin tetap membiasakan diri bekerja sama dan berdiskusi dengan anggota tim ketika menemukan masalah dan membantu rekan saya ketika dia menanyakan sesuatu.  
 
 
-**PIRDA MUSTIKA**
+**PIRDA MUSTIKA**  
 
 1.Apa perbedaan bekerja sendiri dengan bekerja menggunakan git dan github  
     Saat bekerja sendiri, kode hanya tersimpan di komputer pribadi dan jika ada revisi sering kali berujung membuat banyak file (seperti tugas_akhir.html, tugas_akhir_revisi.html).  
@@ -145,7 +145,7 @@ Kontribusi terbesar saya adalah membantu membantu bagian yang tidak mengerti ole
    Kebiasaan membaca pesan error dengan teliti (troubleshooting mandiri), selalu menggunakan branch terpisah untuk fitur baru, dan berani mengomunikasikan conflict kode dengan tim alih-alih memaksakan push secara sepihak.
 
 
-**NADIRA SILVIA**
+**NADIRA SILVIA**  
 
    1.Apa perbedaan bekerja sendiri dengan bekerja menggunakan Git dan GitHub?  
 Kalau kerja sendiri, kita asal edit file langsung dan rawan hilang atau tertimpa kalau salah ketik. Tapi kalau pakai Git dan GitHub, kita bisa bagi-bagi tugas di branch masing-masing, ada catatan riwayat perubahannya, dan pas digabungin juga lebih aman tanpa ngerusak kodingan temen sekelompok.  
@@ -172,7 +172,7 @@ Bikin dan ngelola branch sendiri (fitur-anggota), ngisi data/fitur bagian saya d
 Nggak bakal ngedit kodingan langsung di branch main, selalu rajin bikin pesan commit yang jelas, dan selalu pakai Pull Request dulu sebelum nge-merge kodingan. 
 
 
- **MOH RIZAL F**
+ **MOH RIZAL F**  
 
 1.Perbedaan Bekerja Sendiri vs. Menggunakan Git dan GitHub  
 
