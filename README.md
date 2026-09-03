@@ -1,15 +1,7 @@
 # website-profil-xi-rpl2-kelompok02
-<<<<<<< HEAD
 
 Website dikembangkan menggunakan HTML.
 
-=======
-Website dikembangkan menggunakan HTML5.
-
-
- 
-=======
->>>>>>> origin/fitur-anggota
 # website-profil-xi-rpl2-02
 
 website ini merupakan proyek pembelajaran
@@ -72,8 +64,6 @@ Nama Developer: Rizal
 Hasil Review: Approve  
 Komentar Reviewer:Halaman kontak sudah sesuai dengan tugas. Informasi kontak sudah tersedia, struktur HTML benar, dan kode cukup rapi.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ##  TROUBLESHOOTING LOG
 
 1.masalahnya pada awal lupaa ga nge git branch / commit (kaloo ga salah) jadi solusi yang kita sepakati adalah ngulang laagi membuat repository baru tapi sudah teratasi dan aman..
@@ -86,6 +76,23 @@ git pull origin main
 sama saya di coba dan hasilnya jadi amann
 
 terus selebihnya mungkin yang masalah/error conflick itu rada bingung tapi kita masih bisa nge handle itu.
+
+## PERTANYAAN CONFLICT
+
+1. mengapa konflik terjadi?
+   - karna mengalami perubahan yang di lakukan oleh dua anggota yaitu anggota A dan B pada bagian yang sama pada README.md
+2. apakah konflik berarti git rusak?
+
+- tidak, karna jika git rusak kita tidak akan bisa mengerjakan perubahan karna konflik sebenarnya terjadi dalam kodenya
+
+3. siapa yang harus menentukan versi kode yg benar?
+
+- Manager, karena manager bertanggung jawab menentukan versi kode yang benar dan memastikan kode tersebut sesuai dengan hasil kerja tim sebelum digabungkan ke project utama.
+
+4. mengapa komunikasi antarprogrammer penting
+
+- agar tidak terjadi kesalahpahaman dan jika ada yang error bisa menanyankan satu sama lain jadi membantu sesama teman
+
 
 
 ##  REFLEKSI INDIVIDU
@@ -116,6 +123,35 @@ Kontribusi terbesar saya adalah membantu membantu bagian yang tidak mengerti ole
 8.Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan kalian pertahankan?  
 -Kebiasaan yang akan saya pertahankan adalah menggunakan Git dan GitHub dengan baik, seperti membuat branch, melakukan commit dengan jelas, dan mengecek kembali kode sebelum digabungkan. Saya juga ingin tetap membiasakan diri bekerja sama dan berdiskusi dengan anggota tim ketika menemukan masalah dan membantu rekan saya ketika dia menanyakan sesuatu.  
 
+
+**Pirda Mustika**
+1. Apa perbedaan bekerja sendiri dengan bekerja menggunakan git dan github  
+    Saat bekerja sendiri, kode hanya tersimpan di komputer pribadi dan jika ada revisi sering kali berujung membuat banyak file (seperti tugas_akhir.html, tugas_akhir_revisi.html).  
+   Dengan Git dan GitHub, riwayat perubahan kode tersimpan rapi, ada backup di internet (cloud), dan kita bisa berkolaborasi membagi tugas dengan teman kelompok tanpa harus sering kirim-kiriman file mentah.
+   
+2. Apa manfaat branch?  
+   Sangat berguna agar setiap anggota kelompok bisa membuat "ruang kerja" sendiri (misalnya branch fitur-profil). Kita bisa ngoding dan bereksperimen dengan bebas tanpa takut merusak kode utama atau mengganggu file yang sedang dikerjakan teman lain.
+   
+3. Mengapa pull request diperlukan?  
+   Sebagai pos pengecekan sebelum kode kita digabung ke branch utama. Di tahap ini, kita bisa melihat apakah ada bentrok (conflict) dengan kode teman lain, dan menjadi tempat untuk meminta izin serta persetujuan dari kelompok sebelum kodenya benar-benar disatukan.
+   
+4. Apa manfaat code review?  
+   Bisa saling mengecek kesalahan atau typo yang mungkin terlewat oleh pembuat kode. Selain itu, ini melatih komunikasi kelompok agar kualitas kodenya lebih rapi dan seragam.
+   
+5. Error apa yang paling sulit kalian selesaikan?  
+   Paling menantang adalah saat muncul pesan error 403 (Permission denied) ketika mencoba push kode, karena ternyata Git di komputer masih mengarah ke link repository milik teman, bukan milik sendiri. Selain itu, menangani merge conflict saat ada baris kode yang bertabrakan.
+   
+6. Bagaimana kalian menemukan solusinya?  
+   Tidak langsung panik atau menghapus repository. Solusinya ditemukan dengan membaca pesan error di terminal, berdiskusi dengan bantuan AI/Google untuk mengganti alamat tujuan menggunakan perintah git remote set-url, serta memanfaatkan fitur Resolve conflicts langsung dari website GitHub.
+   
+7. Apa kontribusi terbesar kalian dalam kelompok?  
+   Kontribusi saya adalah membuat struktur dasar HTML untuk halaman profil dan memastikan kode dari branch saya berhasil di-push lalu digabungkan dengan rapi ke repository utama kelompok
+   
+8. Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan kalian pertahankan?  
+   Kebiasaan membaca pesan error dengan teliti (troubleshooting mandiri), selalu menggunakan branch terpisah untuk fitur baru, dan berani mengomunikasikan conflict kode dengan tim alih-alih memaksakan push secara sepihak.
+
+
+
 ## REFLEKSI AKHIR
 **Sebelum belajar GitHub, saya berpikir bahwa...**  
 Awalnya saya merasa GitHub itu cukup susah, tapi saya harus belajar supaya bisa menggunakannya.
@@ -128,64 +164,5 @@ Error bukan akhir dari segalanya, tetapi kita bisa belajar dari error tersebut,d
 
 **Jika saya bekerja sebagai programmer dalam sebuah tim, saya akan...**  
 Saya akan berusaha bekerja dan bekerja sama dengan tim semaksimal mungkin,meningkatkan komuniakasi antar anggota.
-=======
-1. mengapa konflik terjadi?
-   - karna mengalami perubahan yang di lakukan oleh dua anggota yaitu anggota A dan B pada bagian yang sama pada README.md
-2. apakah konflik berarti git rusak?
 
-- tidak, karna jika git rusak kita tidak akan bisa mengerjakan perubahan karna konflik sebenarnya terjadi dalam kodenya
 
-3. siapa yang harus menentukan versi kode yg benar?
-
-- Manager, karena manager bertanggung jawab menentukan versi kode yang benar dan memastikan kode tersebut sesuai dengan hasil kerja tim sebelum digabungkan ke project utama.
-
-4. mengapa komunikasi antarprogrammer penting
-
-- agar tidak terjadi kesalahpahaman dan jika ada yang error bisa menanyankan satu sama lain jadi membantu sesama teman
-
-**Pirda Mustika**
-1. Apa perbedaan bekerja sendiri dengan bekerja menggunakan git dan github  
-    Saat bekerja sendiri, kode hanya tersimpan di komputer pribadi dan jika ada revisi sering kali berujung membuat banyak file (seperti tugas_akhir.html, tugas_akhir_revisi.html).  
-   Dengan Git dan GitHub, riwayat perubahan kode tersimpan rapi, ada backup di internet (cloud), dan kita bisa berkolaborasi membagi tugas dengan teman kelompok tanpa harus sering kirim-kiriman file mentah.
-2. Apa manfaat branch?  
-   Sangat berguna agar setiap anggota kelompok bisa membuat "ruang kerja" sendiri (misalnya branch fitur-profil). Kita bisa ngoding dan bereksperimen dengan bebas tanpa takut merusak kode utama atau mengganggu file yang sedang dikerjakan teman lain.
-3. Mengapa pull request diperlukan?  
-   Sebagai pos pengecekan sebelum kode kita digabung ke branch utama. Di tahap ini, kita bisa melihat apakah ada bentrok (conflict) dengan kode teman lain, dan menjadi tempat untuk meminta izin serta persetujuan dari kelompok sebelum kodenya benar-benar disatukan.
-4. Apa manfaat code review?  
-   Bisa saling mengecek kesalahan atau typo yang mungkin terlewat oleh pembuat kode. Selain itu, ini melatih komunikasi kelompok agar kualitas kodenya lebih rapi dan seragam.
-5. Error apa yang paling sulit kalian selesaikan?  
-   Paling menantang adalah saat muncul pesan error 403 (Permission denied) ketika mencoba push kode, karena ternyata Git di komputer masih mengarah ke link repository milik teman, bukan milik sendiri. Selain itu, menangani merge conflict saat ada baris kode yang bertabrakan.
-6. Bagaimana kalian menemukan solusinya?  
-   Tidak langsung panik atau menghapus repository. Solusinya ditemukan dengan membaca pesan error di terminal, berdiskusi dengan bantuan AI/Google untuk mengganti alamat tujuan menggunakan perintah git remote set-url, serta memanfaatkan fitur Resolve conflicts langsung dari website GitHub.
-7. Apa kontribusi terbesar kalian dalam kelompok?  
-   Kontribusi saya adalah membuat struktur dasar HTML untuk halaman profil dan memastikan kode dari branch saya berhasil di-push lalu digabungkan dengan rapi ke repository utama kelompok
-8. Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan kalian pertahankan?  
-   Kebiasaan membaca pesan error dengan teliti (troubleshooting mandiri), selalu menggunakan branch terpisah untuk fitur baru, dan berani mengomunikasikan conflict kode dengan tim alih-alih memaksakan push secara sepihak.
->>>>>>> origin/fitur-profil
-=======
-
-# REFLEKSI MANDIRI  
-1. Apa perbedaan bekerja sendiri dengan bekerja menggunakan Git dan GitHub?  
-Kalau kerja sendiri, kita asal edit file langsung dan rawan hilang atau tertimpa kalau salah ketik. Tapi kalau pakai Git dan GitHub, kita bisa bagi-bagi tugas di branch masing-masing, ada catatan riwayat perubahannya, dan pas digabungin juga lebih aman tanpa ngerusak kodingan temen sekelompok.  
-
-2. Apa manfaat branch?  
-Branch itu ibarat bikin "lembar kerja cadangan". Kita bebas nyobain fitur baru atau ngoding tanpa takut merusak kodingan utama (main). Jadi kalau ada yang error, yang rusak cuma di branch kita aja, kodingan utamanya tetap aman.  
-
-3. Mengapa Pull Request diperlukan?  
-Biar nggak asal gabungin kodingan. Pull Request (PR) itu wadah buat minta izin dan izin ngecek kodingan kita ke tim sebelum dimasukkan ke branch utama, jadi temen-temen sekelompok tahu apa aja yang kita ubah.  
-
-4. Apa manfaat Code Review?  
-Bisa saling bantu meriksa kodingan temen biar kalau ada error langsung ketahuan dari awal. Selain itu, bikin gaya ngetik kode kelompok jadi lebih rapi dan kita juga bisa sekalian belajar dari cara ngoding temen.  
-
-5. Error apa yang paling sulit kalian selesaikan?  
-Pas dapet Merge Conflict waktu mau nggabungin branch ke main, sama error Permission Denied (HTTP 403) gara-gara akun GitHub belum di-invite jadi Collaborator sama ketua kelompok.  
-
-6. Bagaimana kalian menemukan solusinya?  
-Tanya dan diskusi bareng temen sekelompok, baca baik-baik pesan error yang muncul di terminal/GitHub, terus nyoba benerin conflict-nya langsung di web GitHub dan minta pemilik repo buat nambahin akun kita sebagai Collaborator.  
-
-7. Apa kontribusi terbesar kalian dalam kelompok?  
-Bikin dan ngelola branch sendiri (fitur-anggota), ngisi data/fitur bagian saya di project, plus ikutan nyelesaiin simulasi conflict di file README.md.  
-
-8. Jika menjadi programmer profesional, kebiasaan apa dari kegiatan ini yang akan kalian pertahankan?  
-Nggak bakal ngedit kodingan langsung di branch main, selalu rajin bikin pesan commit yang jelas, dan selalu pakai Pull Request dulu sebelum nge-merge kodingan. 
->>>>>>> origin/fitur-anggota
