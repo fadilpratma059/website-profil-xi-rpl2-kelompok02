@@ -118,6 +118,7 @@ Kontribusi terbesar saya adalah membantu membantu bagian yang tidak mengerti ole
 
 
 **PIRDA MUSTIKA**
+
 1.Apa perbedaan bekerja sendiri dengan bekerja menggunakan git dan github  
     Saat bekerja sendiri, kode hanya tersimpan di komputer pribadi dan jika ada revisi sering kali berujung membuat banyak file (seperti tugas_akhir.html, tugas_akhir_revisi.html).  
    Dengan Git dan GitHub, riwayat perubahan kode tersimpan rapi, ada backup di internet (cloud), dan kita bisa berkolaborasi membagi tugas dengan teman kelompok tanpa harus sering  kirim-kiriman file mentah.
@@ -145,6 +146,7 @@ Kontribusi terbesar saya adalah membantu membantu bagian yang tidak mengerti ole
 
 
 **NADIRA SILVIA**
+
    1.Apa perbedaan bekerja sendiri dengan bekerja menggunakan Git dan GitHub?  
 Kalau kerja sendiri, kita asal edit file langsung dan rawan hilang atau tertimpa kalau salah ketik. Tapi kalau pakai Git dan GitHub, kita bisa bagi-bagi tugas di branch masing-masing, ada catatan riwayat perubahannya, dan pas digabungin juga lebih aman tanpa ngerusak kodingan temen sekelompok.  
 
